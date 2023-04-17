@@ -1,0 +1,24 @@
+
+@media screen and (max-width: 800px) {
+    #links{
+        display: none;
+    }
+
+    #burger{
+        display: block;
+    }
+
+    #how img{
+        width: 300px;
+    }
+
+    .person {
+        text-align: center;
+    }
+    .serv{
+        margin: 20px auto;
+    }
+    #container_serv{
+        
+    }
+}
