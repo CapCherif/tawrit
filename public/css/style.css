@@ -24,12 +24,19 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    z-index: 10;
+    z-index: 20;
     box-shadow: 1px 1px 2px 1px rgb(231, 231, 231);
 }
-
+.flexible{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#map{
+    z-index: 10;
+}
 #logo img{
-    width: 100px;
+    width: 60px;
     height: auto;
 }
 .container
@@ -83,25 +90,38 @@ footer p{
     text-align: center;
     color: white;
 }
-#banner div a, #intro a{
+#banner div a{
     padding: 10px 15px;
-    background-color: rgb(137, 30, 236);
-    color: white;
+    background-color: rgb(240, 162, 27);
+    color: rgb(43, 43, 43);
     transition: 0.2s;
     text-decoration: none;
     border-radius: 4px;
 }
 
-#banner div a:hover, #intro a:hover{
-    background-color: blueviolet;
+#banner div a:hover{
+    background-color: rgb(252, 183, 23);
     transition: 0.2s;
 }
 
+#intro a{
+    border: 1px solid rgb(240, 162, 27);
+    color: rgb(240, 162, 27);
+    transition: 0.2s;
+    padding: 5px 8px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#intro a:hover{
+    transition: 0.2s;
+    color: black;
+    background-color: rgb(240, 162, 27);
+}
 #vertnav{
     text-align: center;
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(247, 247, 247);
     position: fixed;
-    top: 130px;
+    top: 85px;
     width: 100%;
     display: none;
     z-index: 10;
@@ -141,7 +161,7 @@ footer p{
 
 #step{
     padding: 150px 10px;
-    background-color: rgb(168, 64, 238);
+    background-color: rgb(112, 61, 146);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -223,7 +243,7 @@ footer p{
 .detail{
     text-align: center;
 }
-.detail img{
+.detail #imd{
     width: 100px;
     height: auto;
     border-radius: 50%;
@@ -240,8 +260,8 @@ footer p{
 .detail form button{
     border: none;
     padding: 6px 10px;
-    background-color: rgb(201, 145, 253);
-    color: rgb(48, 28, 81);
+    background-color: rgb(95, 33, 152);
+    color: rgb(237, 237, 238);
     font-size: 20px;
     border-radius: 2px;
     cursor: pointer;
@@ -297,7 +317,7 @@ footer p{
     height: 500px; */
 /* } */
 
-
+/* validateForm */
 
 select {
     padding: 10px;
@@ -819,4 +839,20 @@ footer center i:hover{
     background-color: rgb(0, 132, 255);
     color: white;
     cursor: pointer;
+}
+
+
+.contact input, .contact textarea{
+    width: 300px;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+.contact button{
+    border: none;
+    padding: 10px 15px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
 }

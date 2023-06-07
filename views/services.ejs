@@ -19,14 +19,14 @@
     
     <nav>
         <div id="logo">
-            <img src="/img/logo.png" alt="">
+            <img src="/img/taourit.png" alt="">
         </div>
 
          <div id="links">
-            <a href="/">الرئيسية</a>
-            <a href="/services" class="current">خدماتنا</a>
-            <a href="/about">من نحن</a>
-            <a href="/contact">اتصل بنا</a>
+            <a href="/">Accueil</a>
+            <a href="/services" class="current">Services</a>
+            <a href="/about">A propos </a>
+            <a href="/contact"> Contact  </a>
          </div>
 
          <div id="burger">
@@ -37,28 +37,29 @@
 
 
     <div id="vertnav">
-        <a href="/contact">اتصل بنا</a>
-        <a href="/about">من نحن</a>
-        <a href="/services" class="current">خدماتنا</a>
-        <a href="/">الرئيسية</a>
+        
+            <a href="/">Accueil</a>
+            <a href="/services" class="current">Services</a>
+            <a href="/about">A propos </a>
+            <a href="/contact"> Contact  </a>
+        
     </div>
 
 
 
     <div class="tete" >
-        <h1> Services -  خدماتنا </h1>
+        <h1> Services </h1>
     </div>
 
 
     <div class="container" >
-        <h2>Welcome</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptate dolores, 
-            asperiores blanditiis sint iste? Et aspernatur soluta ut consequuntur!</p>
+        <h2>Bienvenue</h2>
+        <p>Vous pouvez effectuez votre recherche en combinant le domaine et la région que vous souhaités.</p>
             <hr>
 
         <div id="search_services">
             
-            <select name="" id="">
+            <select name="" id="domaine">
                 <option value="doctors">
                     <span>Doctors</span>
                 </option>
@@ -73,7 +74,14 @@
                 </option>
                 
             </select>
-            <button onclick="SearchServices()">بحث</button>
+            <select name="" id="area">
+                <option value="Constantine">Constantine</option>
+                <option value="Setif">Sétif</option>
+                <option value="Jijel">Jijel</option>
+                <option value="Annaba">Annaba</option>
+                <option value="Sidi belabbes">Sidi belabbes</option>
+            </select>
+            <button onclick="SearchServices()"><i class="fa-solid fa-search"></i></button>
         </div>
 
 

@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@300&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap" 
     rel="stylesheet">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/loading.css">
     <link rel="stylesheet" href="css/media.css">
@@ -19,14 +22,14 @@
     
     <nav>
         <div id="logo">
-            <img src="/img/logo.png" alt="">
+            <img src="/img/taourit.png" alt="">
         </div>
 
          <div id="links">
-            <a href="/">الرئيسية</a>
-            <a href="/services" >خدماتنا</a>
-            <a href="/about">من نحن</a>
-            <a href="/contact">اتصل بنا</a>
+            <a href="/">Accueil</a>
+            <a href="/services">Services</a>
+            <a href="/about">A propos </a>
+            <a href="/contact"> Contact  </a>
          </div>
 
          <div id="burger">
@@ -37,57 +40,61 @@
 
 
     <div id="vertnav">
-        <a href="/contact">اتصل بنا</a>
-        <a href="/about">من نحن</a>
-        <a href="/services" >خدماتنا</a>
-        <a href="/">الرئيسية</a>
+        <a href="/">Accueil</a>
+        <a href="/services">Services</a>
+        <a href="/about">A propos </a>
+        <a href="/contact"> Contact  </a>
     </div>
 
 
 
     <div class="tete" >
-        <h1> Detail -  تفاصيل </h1>
+        <h1> Detail </h1>
     </div>
 
+    <div id="map" style="width: 100%; height: 400px;"></div>
 
     <div class="container" >
         <div class="detail">
             <div>
-                <img src="" alt="">
+                <img id="imd" src="" alt="">
                 <h2></h2>
                 
             </div>
             <div class="star">
 
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptate dolores, 
-                asperiores blanditiis sint iste? Et aspernatur soluta ut consequuntur!</p>
+            <div class="flexible" style="text-align: left; margin-top: 60px;">
+                <div>
+                    <h2>Expérience : </h2>
+                    <p>et exemple de travaux réalisés auparavant.</p>
+                </div>
+                <img id="imp" style="width:300px;" src="" alt="">
+            </div>
 
             <h3>Contact</h3>
             <form action="" id="validateForm">
                 <div class="flex">
-                    
+                    <label for="name">Nom et prénom :</label>
                     <input type="text" required>
-                    <label for="name">الاسم و اللقب</label>
+                    
                 </div>
                 <div class="flex">
+                    <label for="adresse">Adresse : </label>
+                    <input type="text" required>
 
-                    <input type="text" required>
-                    <label for="">العنوان</label>
-
                 </div>
                 <div class="flex">
-                    
+                    <label for="phone">Téléphone</label>
                     <input type="text" required>
-                    <label for="">رقم الهاتف</label>
                 </div>
                 <div class="flex">
-                    
+                    <label for="">Détail supplémentaire :</label>
                     <textarea name="" id="" cols="30" rows="10" required></textarea>
-                    <label for="">تفاصيل فيما يخص طلبك</label>
+                    
                 </div>
-                <button >اتصل الآن</button>
-                <div class="success">تم طلبك بنجاح، سنتصل بك بعد حين</div>
+                <button > Contacter </button>
+                <div class="success">Votre demande à été effectuée avec succès. </div>
             </form>
         </div>
         
@@ -121,6 +128,12 @@
     
     <script src="js/jq.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <script>
+        
+      </script>
+
+
     <script src="js/media.js"></script>
     <script src="js/detail.js"></script>
 </body>

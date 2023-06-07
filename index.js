@@ -55,7 +55,9 @@ app.get('/detail', (req,res)=>{
   
 })
 
-
+app.get('/about', (req,res)=>{
+  res.render('about')
+})
 
 
 
