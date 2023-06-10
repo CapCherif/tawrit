@@ -273,7 +273,11 @@ footer p{
 
 
 
-
+#login_a a{
+    text-decoration: none;
+    color: rgb(92, 92, 92);
+    margin-left: 10px;
+}
 
 #categories {
     position: fixed;
@@ -855,4 +859,49 @@ footer center i:hover{
     background-color: blueviolet;
     color: white;
     font-size: 20px;
+}
+
+
+.head_profil{
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
+.head_profil a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: gray;
+}
+.head_profil img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#addgigs input, #addgigs textarea{
+    padding: 10px;
+    width: 350px;
+    border: 1px solid gray;
+
+}
+
+#upload{
+    width: 200px !important;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px gray;
+    cursor: pointer;
+    padding: 7px;
+    transition: 0.2s;
+}
+#upload:hover{
+    transition: 0.3s ;
+    box-shadow: 1px 1px 5px 1px rgb(188, 188, 188);
+
 }

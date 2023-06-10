@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@300&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <script src="leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Home page</title>
+</head>
+<body>
+    
+    <nav>
+        <div id="logo">
+            <img src="/img/taourit.png" alt="">
+        </div>
+
+         <div id="links">
+            <a href="/">Accueil</a>
+            <a href="/services">Services</a>
+            <a href="/about">A propos </a>
+            <a href="/contact"> Contact  </a>
+         </div>
+
+         <div id="burger">
+            <i  class="fa-solid fa-bars"></i>
+         </div>
+       
+         
+            <div id="login_a">
+                <a href="/login">Login</a>
+                <a class="signup" href="/signup">Sign up</a>
+            </div>
+       
+    </nav>
+
+
+    <div id="vertnav">
+        <a href="/">Accueil</a>
+        <a href="/services">Services</a>
+        <a href="/about">A propos </a>
+        <a href="/contact"> Contact  </a>
+    </div>
+
+
+
+
+    
+    <div class="container" >
+        
+
+        <form action="/signup" method="post" id="loginform">
+            <h2>Enregistrement </h2>
+            <p>Veuillez à bien remplir tout les champs.</p>
+            <input type="text" placeholder="Nom ..." name="nom" id="nom">
+            <input type="text" placeholder="Prénom ..." name="prenom" id="prenom">
+            <input type="text" placeholder="Téléphone ..." name="tel" id="tel">
+            <input type="email" placeholder="Email ..." name="email" id="email">
+            <input type="password" placeholder="Password ..."  id="psw">
+            <p>Profession :</p>
+            <textarea name="prof" id="prof" cols="30" rows="10"></textarea><br><br>
+            <button type="submit">Valider</button>
+            <hr>
+            <small>Si vous êtes déja inscrit, identifier vous  <a href="/login">ici</a></small>
+            
+            <div class="success"> Enregistrement résussie..vous serez rediriger dans quelques instants.</div>
+            <div class="err">Erreur.</div>
+        </form>
+
+
+         <!-- create animation -->
+         <!-- <div class="container_ring">
+            <div class="ring">Loading
+                <span></span>
+            </div>
+        </div> -->
+
+
+        
+    </div>
+    
+
+
+
+
+
+
+    
+
+
+
+
+    
+    <script src="js/jq.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+
+    <script src="js/media.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@300&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <!-- <script src="/leaflet/leaflet.js"></script> -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/loading.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <title>Home page</title>
+</head>
+<body>
+    
+    <nav>
+        <div id="logo">
+            <img src="/img/taourit.png" alt="">
+        </div>
+
+         <div id="links">
+            <a href="/">Accueil</a>
+            <a href="/services">Services</a>
+            <a href="/about">A propos </a>
+            <a href="/contact"> Contact  </a>
+         </div>
+
+         <div id="burger">
+            <i  class="fa-solid fa-bars"></i>
+         </div>
+
+         
+        <div id="login_a">
+            <a href="/espace"> <%- user.prenom %> </a>
+            <a class="logout" href="/logout">Logout</a>
+        </div>
+         
+       
+    </nav>
+
+
+    <div id="vertnav">
+        <a href="/">Accueil</a>
+        <a href="/services">Services</a>
+        <a href="/about">A propos </a>
+        <a href="/contact"> Contact  </a>
+    </div>
+
+
+
+
+    <div class="container" style="margin-top: 100px;" id="profil">
+        
+
+        <div class="head_profil">
+            <img src="/img/profilpic.png" alt="">
+            <a href="/espace/addgigs" class="current">Ajouter un service</a>
+            <a href="/espace/stat">Statistique</a>
+            
+        </div>
+
+       
+        <form action="/upload" id="addgigs" enctype="multipart/form-data">
+            <h3>Ajouter un service : </h3>
+            <p>Veuillez a bien remplir tout les champs, une fois votre demande faites, On vous contactera pour plus de détail. Merci de patienter</p>
+            <p>Quel type de service vous souhaiter offrir</p>
+            <input type="text" id="service" required>
+            <p>Combien d'année d'expérience vous avez dans ce domaine :</p>
+            <input type="text" id="annee" required>
+            <p>Faites une description concernant votre service : </p>
+            <textarea name="" id="desc" cols="30" rows="10" required></textarea>
+            <p>Veuillez choisir une image pour représenter votre service: (limite: 200Ko)</p>
+            <input type="file" required name="image" accept="image/*">
+            <p>Si vous n'avez pas encore charger votre cv, veuillez en selectionenr un :</p>
+            <input type="file"  name="cv" accept=".pdf,.doc,.docx">
+            <div class="success">Votre demande est en cours de traitement. veuillez patienter.</div>
+            <button type="submit"  id="upload">Upload</button>
+            
+        </form>
+         <!-- create animation -->
+         <!-- <div class="container_ring">
+            <div class="ring">Loading
+                <span></span>
+            </div>
+        </div> -->
+
+
+        
+    </div>
+    
+
+
+
+
+
+
+    
+
+
+
+
+    
+    <script src="/js/jq.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+   
+
+    <script src="/js/media.js"></script>
+    <script src="/js/addgigs.js"></script>
+</body>
+</html>
