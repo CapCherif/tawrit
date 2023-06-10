@@ -34,7 +34,7 @@
          </div>
          <% if(login){  %>
             <div id="login_a">
-                <a href="/espace"> Cherif </a>
+                <a href="/espace"><%- user.prenom %> </a>
                 <a class="logout" href="/logout">Logout</a>
             </div>
          <% }else { %>

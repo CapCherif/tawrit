@@ -36,7 +36,13 @@ app.get('/', (req,res)=>{
   if(!req.session.login){
     req.session.login = false;
   }
-  res.render('home', {login:req.session.login})
+  if(req.session.login){
+    res.render('home', {login:req.session.login, user:req.session.user})
+
+  }
+  else{
+    res.render('home', {login: false})
+  }
 
 })
 
@@ -45,7 +51,13 @@ app.get('/contact', function(req,res){
   if(!req.session.login){
     req.session.login = false;
   }
-  res.render('contact', {login:req.session.login})
+  if(req.session.login){
+    res.render('contact', {login:req.session.login, user:req.session.user})
+
+  }
+  else{
+    res.render('contact', {login: false})
+  }
 })  
 
 
@@ -53,8 +65,8 @@ app.get('/services', (req,res)=>{
   if(!req.session.login){
     req.session.login = false;
   }
-  if(req.query.categorie){
-    res.render('services', {categorie:req.query.categorie, login:req.session.login})
+  if(req.session.login){
+    res.render('services',{ login:req.session.login, user:req.session.user})
   }
   else{
     res.render('services', {login:req.session.login})
@@ -81,7 +93,13 @@ app.get('/about', (req,res)=>{
   if(!req.session.login){
     req.session.login = false;
   }
-  res.render('about', {login:req.session.login})
+  if(req.session.login){
+    res.render('about', {login:req.session.login, user:req.session.user})
+
+  }
+  else{
+    res.render('about', {login: false})
+  }
 })
 
 
